@@ -167,7 +167,7 @@ async def Lazy_start():
 
             except Exception as err:
                 print(err)
-                await cmd.reply_text(f"ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.!\n\n**Error:** `{err}`")
+                await cmd.reply_text(f"Something Went Wrong.!\n\n**Error:** `{err}`")
         
 
     @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
@@ -183,7 +183,7 @@ async def Lazy_start():
                     return
 
             if message.from_user.id in Config.BANNED_USERS:
-                await message.reply_text("ꜱᴏʀʀʏ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ!\n\nContact [Support Group](https://t.me/LazyDeveloperSupport)",
+                await message.reply_text("Sorry, You Are Banned!\n\nContact [Support Group](https://t.me/TeamYourX)",
                                         disable_web_page_preview=True)
                 return
 
@@ -191,10 +191,10 @@ async def Lazy_start():
                 return
 
             await message.reply_text(
-                text="ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ꜰʀᴏᴍ ʙᴇʟᴏᴡ:",
+                text="Choose An Option From Below:",
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("ŞΔV€ ƗŇ βΔŦĆĦ", callback_data="addToBatchTrue")],
-                    [InlineKeyboardButton(" ̿̿ ̿̿ ̿   𝘎𝘦𝘵 𝘚𝘩𝘢𝘳𝘢𝘣𝘭𝘦 𝘓𝘪𝘯𝘬 '̿̿ ̿ ̿ ̿ ̿", callback_data="addToBatchFalse")]
+                    [InlineKeyboardButton("Save In Batch", callback_data="addToBatchTrue")],
+                    [InlineKeyboardButton("Get Sharable Link", callback_data="addToBatchFalse")]
                 ]),
                 quote=True,
                 disable_web_page_preview=True
@@ -211,10 +211,10 @@ async def Lazy_start():
             try:
                 forwarded_msg = await message.forward(Config.DB_CHANNEL)
                 file_er_id = str(forwarded_msg.id)
-                share_link = f"https://t.me/{Config.BOT_USERNAME}?start=LazyDeveloperr_{str_to_b64(file_er_id)}"
+                share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PostWild_{str_to_b64(file_er_id)}"
                 CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-                                                                "GΞΓ SHAЯeABLΞ LIИҜ", url=share_link)]]))
+                                                                "Get Sharable Link", url=share_link)]]))
                 if message.chat.username:
                     await forwarded_msg.reply_text(
                         f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
@@ -270,17 +270,17 @@ async def Lazy_start():
             user_id = int(m.command[1])
             ban_duration = int(m.command[2])
             ban_reason = ' '.join(m.command[3:])
-            ban_log_text = f"BΔnninǤ user {user_id} FФЯ {ban_duration} ᴅᴀʏꜱ ꜰᴏʀ ᴛʜᴇ ʀᴇᴀꜱᴏɴ {ban_reason}."
+            ban_log_text = f"Banning User {user_id} For {ban_duration} Day For The Reason {ban_reason}."
             try:
                 await c.send_message(
                     user_id,
-                    f"ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ ꜰᴏʀ **{ban_duration}** ᴅᴀʏ(ꜱ) ꜰᴏʀ ᴛʜᴇ ʀᴇᴀꜱᴏɴ __{ban_reason}__ \n\n"
+                    f"You Are Banned To Use This Bot For **{ban_duration}** Day For The Reason __{ban_reason}__ \n\n"
                     f"**Message from the admin**"
                 )
-                ban_log_text += '\n\nᴜꜱᴇʀ ɴᴏᴛɪꜰɪᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!'
+                ban_log_text += '\n\nUser Notified Successfully!'
             except:
                 traceback.print_exc()
-                ban_log_text += f"\n\nᴜꜱᴇʀ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ꜰᴀɪʟᴇᴅ! \n\n`{traceback.format_exc()}`"
+                ban_log_text += f"\n\nUser Notification Failed! \n\n`{traceback.format_exc()}`"
 
             await db.ban_user(user_id, ban_duration, ban_reason)
             print(ban_log_text)
