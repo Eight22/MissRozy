@@ -61,8 +61,8 @@ class Config(object):
 	AUTO_DELETE_TIME = int(os.environ.get('AUTO_DELETE_TIME', 20))
 
 	ABOUT_BOT_TEXT = f"""
-ᴛʜɪꜱ ɪꜱ ᴘᴇʀᴍᴀɴᴇɴᴛ ꜰɪʟᴇꜱ ꜱᴛᴏʀᴇ ʙᴏᴛ!
-ꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ ɪ ᴡɪʟʟ ꜱᴀᴠᴇ ɪᴛ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ. ᴀʟꜱᴏ ᴡᴏʀᴋꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ. ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴄʜᴀɴɴᴇʟ ᴀꜱ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴇᴅɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ, ɪ ᴡɪʟʟ ᴀᴅᴅ ꜱᴀᴠᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ꜰɪʟᴇ ɪɴ ᴄʜᴀɴɴᴇʟ & ᴀᴅᴅ ꜱʜᴀʀᴀʙʟᴇ ʙᴜᴛᴛᴏɴ ʟɪɴᴋ.
+I Can Store The File Forever.
+Send Me Any File I Will Save In My Database. Also Works For Channel. Add Me To Channel As Admin With Edit Permission, I Will Add Sharable Button Link.
 
 🤖 **ɴᴀᴍᴇ:** [Files Store](https://t.me/{BOT_USERNAME})
 🦹 Creator: <a href=https://t.me/YourX>YourX</a>
