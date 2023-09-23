@@ -117,8 +117,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]]))
             else :
                 await cmd.reply_photo(photo=lazy_pic,
@@ -126,8 +126,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]]))
             
         else:
@@ -362,8 +362,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("GФ HФMΞ", callback_data="gotohome"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🏄Back", callback_data="gotohome"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]
                     ]
                 )
@@ -376,8 +376,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("🥷GФ HФMΞ", callback_data="gotohome")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🏄Back", callback_data="gotohome")
                         ]
                     ]
                 )
@@ -391,8 +391,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]
                     ]
                 )
@@ -404,8 +404,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]
                     ]
                 )
@@ -455,8 +455,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]
                     ]
                 )
@@ -468,8 +468,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖Aß⊕ut ß⊕t", callback_data="aboutbot"),
-                            InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
+                            InlineKeyboardButton("🤖About", callback_data="aboutbot"),
+                            InlineKeyboardButton("🦹Creator", callback_data="aboutdevs")
                         ]
                     ]
                 )
@@ -510,15 +510,15 @@ async def Lazy_start():
                     text=f" Link Generated For Id #{user_id} \n•• UserName : {username} \n\n File Name : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥Download", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('⚡Stream', url=lazy_stream)]])  # web stream Link
                 )
                 await cmd.message.edit(
                     text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥Download", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('⚡Stream', url=lazy_stream)]])  # web stream Link
                 )
             except Exception as e:
                 print(e)  # print the error message
