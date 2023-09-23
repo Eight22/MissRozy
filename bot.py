@@ -116,6 +116,7 @@ async def Lazy_start():
                 caption=Config.LAZY_HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
                     [
+                        [
                             InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
                             InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
                         ]]))
@@ -124,6 +125,7 @@ async def Lazy_start():
                 caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
                     [
+                        [
                             InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
                             InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
                         ]]))
