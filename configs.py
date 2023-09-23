@@ -63,13 +63,11 @@ class Config(object):
 	ABOUT_BOT_TEXT = f"""
 I Can Store The File Forever.
 Send Me Any File I Will Save In My Database. Also Works For Channel. Add Me To Channel As Admin With Edit Permission, I Will Add Sharable Button Link.
-
-🤖 **ɴᴀᴍᴇ:** [Files Store](https://t.me/{BOT_USERNAME})
+"""
+	ABOUT_DEV_TEXT = f"""
+🦅 Name: [PostWild](https://t.me/{BOT_USERNAME})
 🦹 Creator: <a href=https://t.me/YourX>YourX</a>
 🤖 Version: 2.0 ⚡️ """
-	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 <a href='https://t.me/TeamYourX'>YourX</a>
-"""
 	LAZY_HOME_TEXT = """
 Hey, [{}](tg://user?id={})\nI Can Store The File Forever.
 
