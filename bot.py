@@ -116,32 +116,16 @@ async def Lazy_start():
                 caption=Config.LAZY_HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕†s chαηηεl", url="https://t.me/LazyDeveloper")
-                        ],
-                        [
                             InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
                             InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
-                        ],
-                        [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
                         ]]))
             else :
                 await cmd.reply_photo(photo=lazy_pic,
                 caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [
-                            InlineKeyboardButton("🍿supp⊕r† gr⊕up", url="https://t.me/LazyDeveloperSupport"),
-                            InlineKeyboardButton("🔊ß⊕†s chαηηεl", url="https://t.me/LazyDeveloper")
-                        ],
-                        [
                             InlineKeyboardButton("🤖Aß⊕ut ß⊕†", callback_data="aboutbot"),
                             InlineKeyboardButton("♥️Aß⊕ut Đ€V", callback_data="aboutdevs")
-                        ],
-                        [
-                            InlineKeyboardButton("⎝⎝✧✧ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ✧✧⎠⎠", url="https://youtu.be/Rtjyz3lEZwE")
                         ]]))
             
         else:
