@@ -510,15 +510,15 @@ async def Lazy_start():
                     text=f" Link Generated For Id #{user_id} \n•• UserName : {username} \n\n File Name : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('⚡Stream', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
                 )
                 await cmd.message.edit(
                     text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('⚡Stream', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
                 )
             except Exception as e:
                 print(e)  # print the error message
