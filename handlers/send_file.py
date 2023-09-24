@@ -47,7 +47,7 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                                           reply_markup=InlineKeyboardMarkup(
                                             [
                                                 [
-                                                  InlineKeyboardButton("📥Download", url=lazy_download),
+                                                  InlineKeyboardButton("📥Fast Download", url=lazy_download),
                                                   InlineKeyboardButton("⚡Stream", url=lazy_stream),
                                                 ],
                                             ]),
@@ -70,7 +70,7 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                                               reply_markup=InlineKeyboardMarkup(
                                             [
                                                 [
-                                                  InlineKeyboardButton("📥Download", url=lazy_download),
+                                                  InlineKeyboardButton("📥Fast Download", url=lazy_download),
                                                   InlineKeyboardButton("⚡Stream", url=lazy_stream),
                                                 ],
                                             ]),
