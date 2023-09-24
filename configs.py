@@ -65,7 +65,7 @@ I Can Store The File Forever.
 Send Me Any File I Will Save In My Database. Also Works For Channel. Add Me To Channel As Admin With Edit Permission, I Will Add Sharable Button Link.
 """
 	ABOUT_DEV_TEXT = f"""
-🦅 Name: [PostWild](https://t.me/{BOT_USERNAME})
+🦅 Name: [𝔽𝕚𝕝𝕖 𝕊𝕥𝕠𝕣𝕖](https://t.me/{BOT_USERNAME})
 🦹 Creator: <a href=https://t.me/YourX>YourX</a>
 🤖 Version: 2.0 ⚡️ """
 	LAZY_HOME_TEXT = """
